@@ -1,5 +1,4 @@
-$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding($False)
-
+. ~/.config/powershell/Env.ps1
 . ~/.config/powershell/PSFzf.ps1
 . ~/.config/powershell/Aliases.ps1
 . ~/.config/powershell/Imports.ps1
