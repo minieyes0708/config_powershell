@@ -4,6 +4,9 @@ function Random-Prompt {
     $env:OhMyPoshTheme = $files[$index - 1]
     oh-my-posh --init --shell pwsh --config $env:OhMyPoshTheme | Invoke-Expression
 }
+function Backup-OhMyPoshTheme {
+    mv $env:OhMyPoshTheme ~/.config/oh-my-posh/themes_backup/
+}
 function Remove-OhMyPoshTheme {
     rm $env:OhMyPoshTheme
 }
