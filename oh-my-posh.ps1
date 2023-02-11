@@ -17,16 +17,8 @@ switch ("$env:COMPUTERNAME-$env:USERNAME")
         # Random-Prompt
         # oh-my-posh fails on win8
     }
-    "NVT02863_NB-NVT02863"
-    {
-        Random-Prompt
-    }
-    "MINIEYES-PC2-chenv"
-    {
-        Random-Prompt
-    }
     default
     {
-        throw No matching settings
+        Random-Prompt
     }
 }
