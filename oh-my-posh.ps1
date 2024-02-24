@@ -1,11 +1,11 @@
 function Random-Prompt {
-    $files = (Get-ChildItem ~/.config/oh-my-posh/themes)
+    $files = (Get-ChildItem ~/$env:DotConfig/oh-my-posh/themes)
     $index = Get-Random -Maximum ($files.Count)
     $env:OhMyPoshTheme = $files[$index - 1]
     oh-my-posh --init --shell pwsh --config $env:OhMyPoshTheme | Invoke-Expression
 }
 function Backup-OhMyPoshTheme {
-    mv $env:OhMyPoshTheme ~/.config/oh-my-posh/themes_backup/
+    mv $env:OhMyPoshTheme ~/$env:DotConfig/oh-my-posh/themes_backup/
 }
 function Remove-OhMyPoshTheme {
     rm $env:OhMyPoshTheme
