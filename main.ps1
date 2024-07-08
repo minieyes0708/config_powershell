@@ -6,5 +6,6 @@ foreach ($file in Get-ChildItem $PSScriptRoot/*.ps1) {
 function Initialize-Modules {
     Set-RandomPrompt
     Initialize-PSReadLine
+    Initialize-Catppuccin
     Import-Module -Name Terminal-Icons
 }
