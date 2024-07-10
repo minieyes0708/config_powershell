@@ -3,6 +3,7 @@ function Initialize-Catppuccin {
     $Flavor = $Catppuccin['Frappe']
 
     $env:FZF_DEFAULT_OPTS = @"
+        --height=40% --reverse
         --color=bg+:$($Flavor.Surface0),bg:$($Flavor.Base),spinner:$($Flavor.Rosewater)
         --color=hl:$($Flavor.Red),fg:$($Flavor.Text),header:$($Flavor.Red)
         --color=info:$($Flavor.Mauve),pointer:$($Flavor.Rosewater),marker:$($Flavor.Rosewater)
