@@ -5,7 +5,7 @@ function Set-RandomPrompt {
     oh-my-posh --init --shell pwsh --config $env:OhMyPoshTheme | Invoke-Expression
 }
 function Select-OhMyPoshTheme {
-    $folder = "$($env:DotConfig)/oh-my-posh/themes"
+    $folder = "$($env:PROGRAM_PATH)/oh-my-posh/themes"
     $filenames = Get-ChildItem $folder | ForEach-Object { $_.Name }
     $env:OhMyPoshTheme = Join-Path $($folder) $($filenames | fzf)
     oh-my-posh --init --shell pwsh --config $env:OhMyPoshTheme | Invoke-Expression
