@@ -7,3 +7,4 @@ New-Alias -Force -Name tgit -Value TortoiseGitProc.exe
 function p { x p $args }
 function sf { x sf $args }
 function dict { x dict $args }
+function esfile { x esfile $args }
