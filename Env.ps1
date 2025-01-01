@@ -1,5 +1,7 @@
 $more_paths = (
     'C:\Program Files\7-Zip',
+    'D:\minieyes\software\nvim-win64\bin',
+    'C:\Users\chenv\AppData\Local\Programs\Python\Python310',
     ''
 )
 $original_paths = $env:PATH -split ';'
